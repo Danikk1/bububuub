@@ -1,0 +1,51 @@
+﻿<Page x:Class="Laba5._2.AuthorizationsWindow"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Laba5._2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthorizationsWindow">
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="Button" x:Key="CustomButtonStyle">
+                <Setter Property="Background" Value="Purple"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </Grid.Resources>
+
+
+        <Grid Background="LightGray" Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="RoleTbx" Grid.Column="0"/>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Style="{StaticResource CustomButtonStyle}" Content="Добавить" Click="Button_Click" Height="25" Margin="5,5,5,0" VerticalAlignment="Top"/>
+                    <Button Grid.Column="1" Style="{StaticResource CustomButtonStyle}" Content="Изменить" Click="Button_Click_1"/>
+                    <Button Grid.Column="2" Style="{StaticResource CustomButtonStyle}" Content="Удалить" Click="Button_Click_2"/>
+                </Grid>
+                <TextBlock HorizontalAlignment="Center" Grid.Row="1" >Данные для заполнения</TextBlock>
+                <TextBox x:Name="RoleDbx" Grid.Row="2" Background="LightBlue" materialDesign:HintAssist.Hint="Новая Роль" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

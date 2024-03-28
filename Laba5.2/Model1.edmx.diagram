@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="095372abaaa545be80d4c19d39cc8593" Name="Diagram1">
+        <EntityTypeShape EntityType="FishingStoreModel.Authorizations" Width="1.5" PointX="10.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Employees" Width="1.5" PointX="8" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Manufacturers" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Order_Details" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Orders" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Product_Categories" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Products" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Reviews" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Roles" Width="1.5" PointX="5.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Stores" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Users" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FishingStoreModel.Warehouses" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <AssociationConnector Association="FishingStoreModel.FK__Authoriza__Emplo__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Authoriza__Role___00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Employees__Role___7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Products__Manufa__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Order_Det__Order__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Order_Det__Produ__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Orders__Store_ID__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Orders__User_ID__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Products__Catego__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Products__Wareho__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Reviews__Product__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="FishingStoreModel.FK__Reviews__User_ID__778AC167" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
